@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A570F4C1BF1F6BC536D8A13B /* Pods_SceneKit_VR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C5B3A35157D03E4B310E62 /* Pods_SceneKit_VR.framework */; };
+		ADC5A0EA21359A4D00D4537A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5A0E921359A4D00D4537A /* AppDelegate.swift */; };
+		ADC5A0F121359A5000D4537A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5A0F021359A5000D4537A /* Assets.xcassets */; };
+		ADC5A0F421359A5000D4537A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC5A0F221359A5000D4537A /* LaunchScreen.storyboard */; };
+		ADC5A1062135B23600D4537A /* GVRHeadTransform+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5A1022135B23500D4537A /* GVRHeadTransform+Rotation.swift */; };
+		ADC5A1072135B23600D4537A /* SceneKitVRRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5A1032135B23500D4537A /* SceneKitVRRenderer.swift */; };
+		ADC5A1082135B23600D4537A /* RenderLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5A1042135B23500D4537A /* RenderLoop.swift */; };
+		ADC5A1092135B23600D4537A /* VRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5A1052135B23500D4537A /* VRController.swift */; };
+		ADC5A10D2135BA5300D4537A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5A10C2135BA5300D4537A /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F259F56B9D42C649F189716 /* Pods-SceneKit-VR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKit-VR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SceneKit-VR/Pods-SceneKit-VR.debug.xcconfig"; sourceTree = "<group>"; };
+		52C5B3A35157D03E4B310E62 /* Pods_SceneKit_VR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneKit_VR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC5A0E621359A4D00D4537A /* SceneKit-VR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SceneKit-VR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC5A0E921359A4D00D4537A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADC5A0F021359A5000D4537A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADC5A0F321359A5000D4537A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADC5A0F521359A5000D4537A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC5A0FF2135ADD400D4537A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ADC5A1022135B23500D4537A /* GVRHeadTransform+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GVRHeadTransform+Rotation.swift"; sourceTree = "<group>"; };
+		ADC5A1032135B23500D4537A /* SceneKitVRRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitVRRenderer.swift; sourceTree = "<group>"; };
+		ADC5A1042135B23500D4537A /* RenderLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderLoop.swift; sourceTree = "<group>"; };
+		ADC5A1052135B23500D4537A /* VRController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRController.swift; sourceTree = "<group>"; };
+		ADC5A10C2135BA5300D4537A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF8FD353F6FC7A8A1227FD7A /* Pods-SceneKit-VR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKit-VR.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneKit-VR/Pods-SceneKit-VR.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADC5A0E321359A4D00D4537A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A570F4C1BF1F6BC536D8A13B /* Pods_SceneKit_VR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35D6EC281B6990AF2826944F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52C5B3A35157D03E4B310E62 /* Pods_SceneKit_VR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D48B21B7198E5D1EE590BB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F259F56B9D42C649F189716 /* Pods-SceneKit-VR.debug.xcconfig */,
+				FF8FD353F6FC7A8A1227FD7A /* Pods-SceneKit-VR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADC5A0DD21359A4D00D4537A = {
+			isa = PBXGroup;
+			children = (
+				ADC5A0E821359A4D00D4537A /* SceneKit-VR */,
+				ADC5A0E721359A4D00D4537A /* Products */,
+				7D48B21B7198E5D1EE590BB8 /* Pods */,
+				35D6EC281B6990AF2826944F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADC5A0E721359A4D00D4537A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A0E621359A4D00D4537A /* SceneKit-VR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADC5A0E821359A4D00D4537A /* SceneKit-VR */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A10A2135B9A800D4537A /* Scenes */,
+				ADC5A1002135AE8700D4537A /* Common */,
+				ADC5A0FE2135ADB800D4537A /* Resources */,
+				ADC5A0FD2135ADAB00D4537A /* App */,
+				ADC5A0FB2135AD8800D4537A /* Supporting Files */,
+				ADC5A0F221359A5000D4537A /* LaunchScreen.storyboard */,
+			);
+			path = "SceneKit-VR";
+			sourceTree = "<group>";
+		};
+		ADC5A0FB2135AD8800D4537A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A0FF2135ADD400D4537A /* Bridging-Header.h */,
+				ADC5A0F521359A5000D4537A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADC5A0FD2135ADAB00D4537A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A0E921359A4D00D4537A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ADC5A0FE2135ADB800D4537A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A0F021359A5000D4537A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ADC5A1002135AE8700D4537A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A1012135B21A00D4537A /* SceneKitVR */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ADC5A1012135B21A00D4537A /* SceneKitVR */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A1022135B23500D4537A /* GVRHeadTransform+Rotation.swift */,
+				ADC5A1042135B23500D4537A /* RenderLoop.swift */,
+				ADC5A1032135B23500D4537A /* SceneKitVRRenderer.swift */,
+				ADC5A1052135B23500D4537A /* VRController.swift */,
+			);
+			path = SceneKitVR;
+			sourceTree = "<group>";
+		};
+		ADC5A10A2135B9A800D4537A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A10B2135BA1B00D4537A /* Game */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ADC5A10B2135BA1B00D4537A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A10C2135BA5300D4537A /* ViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADC5A0E521359A4D00D4537A /* SceneKit-VR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADC5A0F821359A5000D4537A /* Build configuration list for PBXNativeTarget "SceneKit-VR" */;
+			buildPhases = (
+				1F572284583BDAB123D225E5 /* [CP] Check Pods Manifest.lock */,
+				ADC5A0E221359A4D00D4537A /* Sources */,
+				ADC5A0E321359A4D00D4537A /* Frameworks */,
+				ADC5A0E421359A4D00D4537A /* Resources */,
+				6B4C725FECA01D25130CA9FA /* [CP] Embed Pods Frameworks */,
+				BAA7A843FBD43E7CC058B200 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SceneKit-VR";
+			productName = "SceneKit-VR";
+			productReference = ADC5A0E621359A4D00D4537A /* SceneKit-VR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADC5A0DE21359A4D00D4537A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Ignus;
+				TargetAttributes = {
+					ADC5A0E521359A4D00D4537A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = ADC5A0E121359A4D00D4537A /* Build configuration list for PBXProject "SceneKit-VR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADC5A0DD21359A4D00D4537A;
+			productRefGroup = ADC5A0E721359A4D00D4537A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADC5A0E521359A4D00D4537A /* SceneKit-VR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADC5A0E421359A4D00D4537A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC5A0F421359A5000D4537A /* LaunchScreen.storyboard in Resources */,
+				ADC5A0F121359A5000D4537A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F572284583BDAB123D225E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceneKit-VR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B4C725FECA01D25130CA9FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SceneKit-VR/Pods-SceneKit-VR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneKit-VR/Pods-SceneKit-VR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA7A843FBD43E7CC058B200 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SceneKit-VR/Pods-SceneKit-VR-resources.sh",
+				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogsArrows.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogsStrings.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitHUD.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/MaterialRobotoFontLoader.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CardboardSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitCore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogs.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogsArrows.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogsStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialRobotoFontLoader.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneKit-VR/Pods-SceneKit-VR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADC5A0E221359A4D00D4537A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC5A1072135B23600D4537A /* SceneKitVRRenderer.swift in Sources */,
+				ADC5A1092135B23600D4537A /* VRController.swift in Sources */,
+				ADC5A1082135B23600D4537A /* RenderLoop.swift in Sources */,
+				ADC5A10D2135BA5300D4537A /* ViewController.swift in Sources */,
+				ADC5A1062135B23600D4537A /* GVRHeadTransform+Rotation.swift in Sources */,
+				ADC5A0EA21359A4D00D4537A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADC5A0F221359A5000D4537A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADC5A0F321359A5000D4537A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADC5A0F621359A5000D4537A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADC5A0F721359A5000D4537A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADC5A0F921359A5000D4537A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F259F56B9D42C649F189716 /* Pods-SceneKit-VR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4GAXD7V7F;
+				INFOPLIST_FILE = "$(SRCROOT)/SceneKit-VR/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ignus.vr.scenekit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKit-VR/Supporting Files/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADC5A0FA21359A5000D4537A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8FD353F6FC7A8A1227FD7A /* Pods-SceneKit-VR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4GAXD7V7F;
+				INFOPLIST_FILE = "$(SRCROOT)/SceneKit-VR/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ignus.vr.scenekit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKit-VR/Supporting Files/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADC5A0E121359A4D00D4537A /* Build configuration list for PBXProject "SceneKit-VR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC5A0F621359A5000D4537A /* Debug */,
+				ADC5A0F721359A5000D4537A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADC5A0F821359A5000D4537A /* Build configuration list for PBXNativeTarget "SceneKit-VR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC5A0F921359A5000D4537A /* Debug */,
+				ADC5A0FA21359A5000D4537A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADC5A0DE21359A4D00D4537A /* Project object */;
+}
